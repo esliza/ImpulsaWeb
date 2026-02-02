@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ImpulsaWeb - Tecnología simple para hacer crecer tu negocio</title>
-    <meta name="description" content="Crea tu presencia online con ImpulsaWeb. Páginas web modernas, sistemas de gestión y contenido digital para pequeños negocios.">
+    <title>ImpulsaWeb - Catálogo digital para emprendedores del condominio</title>
+    <meta name="description" content="Un solo lugar donde comprar a tus vecinos. Catálogo ordenado para todos los emprendimientos del condominio. Menús, tiendas, alquileres y más.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- ImpulsaWeb -->
     <!-- ==================== HEADER ==================== -->
     <header class="header">
         <div class="container">
@@ -27,27 +26,24 @@
                             </linearGradient>
                         </defs>
                         
-                        <!-- Pantalla/Dispositivo -->
-                        <rect x="12" y="10" width="26" height="20" rx="2" fill="none" stroke="white" stroke-width="1.5"/>
-                        <line x1="14" y1="12" x2="36" y2="12" stroke="white" stroke-width="1"/>
+                        <!-- Edificio (condominio) -->
+                        <rect x="12" y="12" width="26" height="26" rx="2" fill="none" stroke="white" stroke-width="1.5"/>
                         
-                        <!-- Líneas de contenido (como datos) -->
-                        <line x1="14" y1="15" x2="30" y2="15" stroke="white" stroke-width="0.8" opacity="0.8"/>
-                        <line x1="14" y1="18" x2="28" y2="18" stroke="white" stroke-width="0.8" opacity="0.8"/>
-                        <line x1="14" y1="21" x2="32" y2="21" stroke="white" stroke-width="0.8" opacity="0.8"/>
-                        <line x1="14" y1="24" x2="26" y2="24" stroke="white" stroke-width="0.8" opacity="0.8"/>
+                        <!-- Ventanas (departamentos) -->
+                        <circle cx="17" cy="17" r="2" fill="white"/>
+                        <circle cx="25" cy="17" r="2" fill="white"/>
+                        <circle cx="33" cy="17" r="2" fill="white"/>
                         
-                        <!-- Flecha hacia arriba (crecimiento) -->
-                        <g transform="translate(33, 15)">
-                            <line x1="0" y1="8" x2="0" y2="0" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                            <line x1="0" y1="0" x2="-2" y2="3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <line x1="0" y1="0" x2="2" y2="3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
+                        <circle cx="17" cy="25" r="2" fill="white"/>
+                        <circle cx="25" cy="25" r="2" fill="white"/>
+                        <circle cx="33" cy="25" r="2" fill="white"/>
                         
-                        <!-- Base/Tienda (parte inferior) -->
-                        <path d="M 16 32 L 34 32 L 33 27 L 17 27 Z" fill="white" opacity="0.9"/>
-                        <circle cx="20" cy="35" r="1" fill="white"/>
-                        <circle cx="30" cy="35" r="1" fill="white"/>
+                        <circle cx="17" cy="33" r="2" fill="white"/>
+                        <circle cx="25" cy="33" r="2" fill="white"/>
+                        <circle cx="33" cy="33" r="2" fill="white"/>
+                        
+                        <!-- Puerta -->
+                        <rect x="23" y="38" width="4" height="6" fill="white" opacity="0.8"/>
                     </svg>
                     <span class="logo-text">ImpulsaWeb</span>
                 </div>
@@ -55,11 +51,11 @@
                 <!-- Menú -->
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                        <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
-                        <li><a href="#proceso" class="nav-link">Cómo trabajamos</a></li>
-                        <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
-                        <li><a href="#contacto" class="nav-link cta-btn">Contacto</a></li>
+                        <li><a href="#problema" class="nav-link">El Problema</a></li>
+                        <li><a href="#solucion" class="nav-link">La Solución</a></li>
+                        <li><a href="#negocios" class="nav-link">Negocios</a></li>
+                        <li><a href="#como-funciona" class="nav-link">Cómo Funciona</a></li>
+                        <li><a href="#contacto" class="nav-link cta-btn">Únete Ahora</a></li>
                     </ul>
                 </nav>
 
@@ -81,255 +77,389 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Impulsamos tu negocio<br>con <span class="highlight">tecnología simple</span> y efectiva</h1>
-                <p class="hero-subtitle">Pequeños negocios, grandes resultados. Diseñamos soluciones web que convierten visitas en clientes.</p>
+                <h1 class="hero-title">Un solo lugar para encontrar<br><span class="highlight">a todos tus vecinos emprendedores</span></h1>
+                <p class="hero-subtitle">Adiós al caos de WhatsApp. Hola a un catálogo ordenado, fácil y rápido. Compra a tus vecinos con confianza.</p>
                 
                 <div class="hero-cta">
-                    <button class="btn btn-primary" onclick="scrollToContacto()">Solicita una asesoría gratuita</button>
-                    <a href="https://wa.me/+51946885790?text=Hola%20ImpulsaWeb%21%20Me%20gustaría%20conocer%20más%20sobre%20vuestros%20servicios" target="_blank" class="btn btn-secondary">
-                        💬 Hablemos por WhatsApp
+                    <button class="btn btn-primary" onclick="scrollToContacto()">Sé parte del grupo piloto</button>
+                    <a href="https://wa.me/+51946885790?text=Hola%20ImpulsaWeb%21%20Me%20interesa%20ser%20parte%20del%20grupo%20piloto%20para%20emprendedores" target="_blank" class="btn btn-secondary">
+                        💬 Cuéntame más por WhatsApp
                     </a>
                 </div>
 
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">150+</span>
-                        <span class="stat-label">Negocios transformados</span>
+                        <span class="stat-number">300+</span>
+                        <span class="stat-label">Departamentos en el condominio</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">98%</span>
-                        <span class="stat-label">Satisfacción de clientes</span>
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Mensajes repetidos</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">2 años</span>
-                        <span class="stat-label">De experiencia</span>
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Visibilidad para tu negocio</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== SERVICIOS ==================== -->
-    <section id="servicios" class="servicios">
+    <!-- ==================== PROBLEMA ==================== -->
+    <section id="problema" class="problema">
         <div class="container">
             <div class="section-header">
-                <h2>Nuestros Servicios</h2>
-                <p>Soluciones web completas para el crecimiento de tu negocio</p>
+                <h2>El Problema Real</h2>
+                <p>¿Te suena familiar?</p>
             </div>
 
-            <div class="servicios-grid">
-                <!-- Servicio 1 -->
-                <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="30" cy="30" r="28" fill="#EEF2FF" stroke="#6366F1" stroke-width="2"/>
-                            <path d="M20 15H40C41.1046 15 42 15.8954 42 17V43C42 44.1046 41.1046 45 40 45H20C18.8954 45 18 44.1046 18 43V17C18 15.8954 18.8954 15 20 15Z" fill="none" stroke="#6366F1" stroke-width="2"/>
-                            <line x1="18" y1="22" x2="42" y2="22" stroke="#6366F1" stroke-width="1.5"/>
-                            <circle cx="30" cy="35" r="5" fill="none" stroke="#6366F1" stroke-width="1.5"/>
-                        </svg>
-                    </div>
-                    <h3>Páginas Web Modernas</h3>
-                    <p>Diseños responsivos, rápidos y optimizados para SEO que te posiciona en Google y atrae clientes reales.</p>
-                    <ul class="servicio-features">
-                        <li>✓ Diseño personalizado</li>
-                        <li>✓ Optimización SEO</li>
-                        <li>✓ Móvil-responsive</li>
-                    </ul>
+            <div class="problema-grid">
+                <!-- Problema 1 -->
+                <div class="problema-card">
+                    <div class="problema-icon">📱</div>
+                    <h3>Demasiados Mensajes</h3>
+                    <p>El grupo de WhatsApp es una avalancha. Menús, promociones, pedidos... todo mezclado. Nadie logra encontrar nada.</p>
                 </div>
 
-                <!-- Servicio 2 -->
-                <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="30" cy="30" r="28" fill="#F0FDF4" stroke="#10B981" stroke-width="2"/>
-                            <rect x="18" y="18" width="24" height="24" rx="2" fill="none" stroke="#10B981" stroke-width="2"/>
-                            <path d="M18 30H42" stroke="#10B981" stroke-width="1.5"/>
-                            <path d="M30 18V42" stroke="#10B981" stroke-width="1.5"/>
-                            <circle cx="24" cy="24" r="1.5" fill="#10B981"/>
-                            <circle cx="36" cy="24" r="1.5" fill="#10B981"/>
-                            <circle cx="24" cy="36" r="1.5" fill="#10B981"/>
-                            <circle cx="36" cy="36" r="1.5" fill="#10B981"/>
-                        </svg>
-                    </div>
-                    <h3>Sistemas de Gestión</h3>
-                    <p>Administra pedidos, controla inventario y organiza clientes desde una plataforma intuitiva y eficiente.</p>
-                    <ul class="servicio-features">
-                        <li>✓ Gestión de pedidos</li>
-                        <li>✓ Control de stock</li>
-                        <li>✓ Base de datos de clientes</li>
-                    </ul>
+                <!-- Problema 2 -->
+                <div class="problema-card">
+                    <div class="problema-icon">🔍</div>
+                    <h3>Imposible Buscar</h3>
+                    <p>¿Dónde está ese postre que vi ayer? ¿Quién vendía bebidas? Scroll, scroll, scroll... y no encuentras.</p>
                 </div>
 
-                <!-- Servicio 3 -->
-                <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="30" cy="30" r="28" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
-                            <path d="M25 22L30 28L35 22" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M22 30H38M22 38H38" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
-                            <circle cx="30" cy="34" r="8" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
-                        </svg>
-                    </div>
-                    <h3>Contenido Digital</h3>
-                    <p>Textos persuasivos, diseño visual atractivo y estrategias para potenciar tu presencia online y vender más.</p>
-                    <ul class="servicio-features">
-                        <li>✓ Copywriting comercial</li>
-                        <li>✓ Diseño visual profesional</li>
-                        <li>✓ Estrategia de marketing</li>
-                    </ul>
+                <!-- Problema 3 -->
+                <div class="problema-card">
+                    <div class="problema-icon">😕</div>
+                    <h3>Clientes Confundidos</h3>
+                    <p>Fotos repetidas, precios actualizados, cambios de horario... La información es un caos.</p>
+                </div>
+
+                <!-- Problema 4 -->
+                <div class="problema-card">
+                    <div class="problema-icon">💼</div>
+                    <h3>Ventas Perdidas</h3>
+                    <p>Tus clientes potenciales se pierden en el ruido. Muchos ni saben que existes o qué vendes.</p>
+                </div>
+
+                <!-- Problema 5 -->
+                <div class="problema-card">
+                    <div class="problema-icon">😩</div>
+                    <h3>Cansancio del Emprendedor</h3>
+                    <p>Postear constantemente, responder mensajes privados, lidiar con conflictos por información desactualizada.</p>
+                </div>
+
+                <!-- Problema 6 -->
+                <div class="problema-card">
+                    <div class="problema-icon">⏰</div>
+                    <h3>Falta de Profesionalismo</h3>
+                    <p>Sin un lugar formal, los negocios parecen casuales. Pierden credibilidad frente a nuevos clientes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== BENEFICIOS ==================== -->
-    <section id="beneficios" class="beneficios">
+    <!-- ==================== SOLUCIÓN ==================== -->
+    <section id="solucion" class="solucion">
         <div class="container">
             <div class="section-header">
-                <h2>¿Por qué elegirnos?</h2>
-                <p>Beneficios reales que transforman tu negocio</p>
+                <h2>La Solución: ImpulsaWeb</h2>
+                <p>Un catálogo simple, ordenado y hecho para ustedes</p>
             </div>
 
-            <div class="beneficios-grid">
-                <!-- Beneficio 1 -->
-                <div class="beneficio-item">
-                    <div class="beneficio-number">01</div>
-                    <h3>Más Ventas</h3>
-                    <p>Una página web profesional y atractiva convierte visitantes en clientes. Nuestros diseños están optimizados para convertir.</p>
-                    <div class="beneficio-metrics">
-                        <span>+45%</span> conversión promedio
+            <div class="solucion-content">
+                <div class="solucion-visual">
+                    <div class="solucion-box">
+                        <div class="solucion-item">
+                            <div class="solucion-number">1</div>
+                            <h4>Un solo link</h4>
+                            <p>Un lugar centralizado donde todos tus vecinos encuentran todos los emprendimientos</p>
+                        </div>
+                        <div class="solucion-item">
+                            <div class="solucion-number">2</div>
+                            <h4>Cada negocio tiene su espacio</h4>
+                            <p>Tu perfil, tu catálogo, tus horarios, tu información. Todo visible y actualizado</p>
+                        </div>
+                        <div class="solucion-item">
+                            <div class="solucion-number">3</div>
+                            <h4>Fácil de usar</h4>
+                            <p>Buscar, filtrar y comprar es tan simple como tocar un botón. Sin complicaciones</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Beneficio 2 -->
-                <div class="beneficio-item">
-                    <div class="beneficio-number">02</div>
-                    <h3>Mejor Organización</h3>
-                    <p>Automatiza procesos, gestiona pedidos y controla tu inventario en un solo lugar. Todo bajo control.</p>
-                    <div class="beneficio-metrics">
-                        <span>80%</span> menos tiempo en trámites
+                <div class="solucion-beneficios">
+                    <h3>¿Qué ganas?</h3>
+                    
+                    <div class="beneficio-simple">
+                        <div class="beneficio-icon">🎯</div>
+                        <div>
+                            <h4>Para los clientes:</h4>
+                            <p><strong>Orden total.</strong> Encuentran fácil lo que buscan. Sin ruido, sin confusión.</p>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Beneficio 3 -->
-                <div class="beneficio-item">
-                    <div class="beneficio-number">03</div>
-                    <h3>Ahorro de Tiempo</h3>
-                    <p>Dedica tu tiempo a lo que realmente importa: crecer tu negocio. Nosotros manejamos la tecnología.</p>
-                    <div class="beneficio-metrics">
-                        <span>5+ horas</span> ahorradas por semana
+                    <div class="beneficio-simple">
+                        <div class="beneficio-icon">📈</div>
+                        <div>
+                            <h4>Para los emprendedores:</h4>
+                            <p><strong>Más visibilidad y más ventas.</strong> Tu negocio se destaca. Los vecinos te encuentran fácil.</p>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Beneficio 4 -->
-                <div class="beneficio-item">
-                    <div class="beneficio-number">04</div>
-                    <h3>Presencia Online 24/7</h3>
-                    <p>Tu negocio trabaja incluso mientras duermes. Atrae clientes de forma automática a cualquier hora.</p>
-                    <div class="beneficio-metrics">
-                        <span>24/7</span> disponible para clientes
-                    </div>
-                </div>
-
-                <!-- Beneficio 5 -->
-                <div class="beneficio-item">
-                    <div class="beneficio-number">05</div>
-                    <h3>Soporte Dedicado</h3>
-                    <p>No estás solo. Nuestro equipo te acompaña en cada paso, resolviendo dudas y optimizando resultados.</p>
-                    <div class="beneficio-metrics">
-                        <span>Respuesta en</span> menos de 2 horas
-                    </div>
-                </div>
-
-                <!-- Beneficio 6 -->
-                <div class="beneficio-item">
-                    <div class="beneficio-number">06</div>
-                    <h3>Inversión Inteligente</h3>
-                    <p>Planes accesibles para pequeños negocios. Paga solo por lo que necesitas, sin sorpresas.</p>
-                    <div class="beneficio-metrics">
-                        <span>Desde</span> planes flexibles
+                    <div class="beneficio-simple">
+                        <div class="beneficio-icon">🏘️</div>
+                        <div>
+                            <h4>Para el condominio:</h4>
+                            <p><strong>Comunidad más fuerte.</strong> Compramos a nuestros vecinos. Apoyamos emprendimientos locales.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== PROCESO ==================== -->
-    <section id="proceso" class="proceso">
+    <!-- ==================== TIPOS DE NEGOCIOS ==================== -->
+    <section id="negocios" class="negocios">
         <div class="container">
             <div class="section-header">
-                <h2>Nuestro Proceso</h2>
-                <p>De la idea al negocio digital en 4 pasos</p>
+                <h2>¿Qué tipo de emprendimientos pueden usar ImpulsaWeb?</h2>
+                <p>Si lo vendes en el condominio, tiene un lugar aquí</p>
             </div>
 
-            <div class="proceso-timeline">
-                <!-- Paso 1 -->
-                <div class="paso">
-                    <div class="paso-header">
+            <div class="negocios-grid">
+                <!-- Negocio 1 -->
+                <div class="negocio-card">
+                    <div class="negocio-emoji">🍜</div>
+                    <h3>Menús Diarios</h3>
+                    <p>Comida casera, almuerzos listos, menú del día. Publica tus opciones y recibe pedidos directos.</p>
+                    <ul class="negocio-ejemplos">
+                        <li>✓ Comida criolla</li>
+                        <li>✓ Comida asiática</li>
+                        <li>✓ Dietas especiales</li>
+                    </ul>
+                </div>
+
+                <!-- Negocio 2 -->
+                <div class="negocio-card">
+                    <div class="negocio-emoji">🍰</div>
+                    <h3>Postres y Repostería</h3>
+                    <p>Tortas, pasteles, postres caseros. Muestra tus creaciones y recibe encargos.</p>
+                    <ul class="negocio-ejemplos">
+                        <li>✓ Pasteles personalizados</li>
+                        <li>✓ Postres del día</li>
+                        <li>✓ Bizcochuelos</li>
+                    </ul>
+                </div>
+
+                <!-- Negocio 3 -->
+                <div class="negocio-card">
+                    <div class="negocio-emoji">🛒</div>
+                    <h3>Tienda de Productos</h3>
+                    <p>Abarrotes, bebidas, snacks, productos varios. Catálogo actualizado con precios.</p>
+                    <ul class="negocio-ejemplos">
+                        <li>✓ Bebidas y bebidas</li>
+                        <li>✓ Snacks y golosinas</li>
+                        <li>✓ Artículos de kiosco</li>
+                    </ul>
+                </div>
+
+                <!-- Negocio 4 -->
+                <div class="negocio-card">
+                    <div class="negocio-emoji">🏠</div>
+                    <h3>Alquileres</h3>
+                    <p>Departamentos, cocheras, espacios. Perfil profesional con galería de fotos.</p>
+                    <ul class="negocio-ejemplos">
+                        <li>✓ Departamentos completos</li>
+                        <li>✓ Alquiler por días</li>
+                        <li>✓ Cocheras</li>
+                    </ul>
+                </div>
+
+                <!-- Negocio 5 -->
+                <div class="negocio-card">
+                    <div class="negocio-emoji">✨</div>
+                    <h3>Servicios Varios</h3>
+                    <p>Limpieza, cuidado infantil, asesoramiento. Lo que hagas y ofrezcas tiene lugar.</p>
+                    <ul class="negocio-ejemplos">
+                        <li>✓ Servicios de limpieza</li>
+                        <li>✓ Cuidado de mascotas</li>
+                        <li>✓ Otros servicios</li>
+                    </ul>
+                </div>
+
+                <!-- Negocio 6 -->
+                <div class="negocio-card">
+                    <div class="negocio-emoji">🎨</div>
+                    <h3>Y Mucho Más</h3>
+                    <p>Cualquier emprendimiento que tenga sentido para la comunidad del condominio.</p>
+                    <ul class="negocio-ejemplos">
+                        <li>✓ Tus ideas aquí</li>
+                        <li>✓ Tu negocio</li>
+                        <li>✓ Tu visibilidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CÓMO FUNCIONA ==================== -->
+    <section id="como-funciona" class="como-funciona">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Cómo Funciona?</h2>
+                <p>Es más simple de lo que crees</p>
+            </div>
+
+            <div class="funciona-grid">
+                <!-- Opción 1: Para clientes -->
+                <div class="funciona-columna">
+                    <div class="funciona-header">
+                        <div class="funciona-icon">👥</div>
+                        <h3>Si eres Cliente</h3>
+                    </div>
+
+                    <div class="funciona-paso">
                         <div class="paso-numero">1</div>
-                        <h3>Consultoría Gratuita</h3>
+                        <h4>Entra al catálogo</h4>
+                        <p>Un link simple te lleva a ImpulsaWeb</p>
                     </div>
-                    <p>Nos reunimos para entender tu negocio, objetivos y necesidades. Escuchamos más de lo que hablamos.</p>
-                    <div class="paso-icon">📞</div>
-                </div>
 
-                <div class="paso-conector"></div>
-
-                <!-- Paso 2 -->
-                <div class="paso">
-                    <div class="paso-header">
+                    <div class="funciona-paso">
                         <div class="paso-numero">2</div>
-                        <h3>Propuesta Personalizada</h3>
+                        <h4>Busca lo que necesitas</h4>
+                        <p>Filtra por tipo: menús, tiendas, alquileres, etc.</p>
                     </div>
-                    <p>Diseñamos una estrategia digital específica para tu negocio, con opciones y presupuesto claro.</p>
-                    <div class="paso-icon">📋</div>
-                </div>
 
-                <div class="paso-conector"></div>
-
-                <!-- Paso 3 -->
-                <div class="paso">
-                    <div class="paso-header">
+                    <div class="funciona-paso">
                         <div class="paso-numero">3</div>
-                        <h3>Desarrollo e Implementación</h3>
+                        <h4>Elige tu emprendedor favorito</h4>
+                        <p>Ve precios, horarios, información actualizada</p>
                     </div>
-                    <p>Creamos tu solución web con diseño moderno, rápido y optimizado. Te informamos en cada etapa.</p>
-                    <div class="paso-icon">⚙️</div>
+
+                    <div class="funciona-paso">
+                        <div class="paso-numero">4</div>
+                        <h4>Compra directo</h4>
+                        <p>Contacta por WhatsApp o llamada. Simple.</p>
+                    </div>
                 </div>
 
-                <div class="paso-conector"></div>
-
-                <!-- Paso 4 -->
-                <div class="paso">
-                    <div class="paso-header">
-                        <div class="paso-numero">4</div>
-                        <h3>Lanzamiento y Soporte</h3>
+                <!-- Opción 2: Para emprendedores -->
+                <div class="funciona-columna">
+                    <div class="funciona-header">
+                        <div class="funciona-icon">💼</div>
+                        <h3>Si eres Emprendedor</h3>
                     </div>
-                    <p>Publicamos tu sitio y ofrecemos capacitación y soporte continuo para el éxito de tu negocio.</p>
-                    <div class="paso-icon">🚀</div>
+
+                    <div class="funciona-paso">
+                        <div class="paso-numero">1</div>
+                        <h4>Crea tu perfil</h4>
+                        <p>Tu nombre, negocio, foto, descripción</p>
+                    </div>
+
+                    <div class="funciona-paso">
+                        <div class="paso-numero">2</div>
+                        <h4>Sube tu catálogo</h4>
+                        <p>Productos, precios, fotos. Actualiza cuando quieras.</p>
+                    </div>
+
+                    <div class="funciona-paso">
+                        <div class="paso-numero">3</div>
+                        <h4>Recibe contactos</h4>
+                        <p>Los vecinos te encuentran fácil y te escriben</p>
+                    </div>
+
+                    <div class="funciona-paso">
+                        <div class="paso-numero">4</div>
+                        <h4>Gestiona tus ventas</h4>
+                        <p>Atiende, cobra y crece tu negocio</p>
+                    </div>
+                </div>
+
+                <!-- Opción 3: Administración -->
+                <div class="funciona-columna">
+                    <div class="funciona-header">
+                        <div class="funciona-icon">⚙️</div>
+                        <h3>Administración Central</h3>
+                    </div>
+
+                    <div class="funciona-paso">
+                        <div class="paso-numero">1</div>
+                        <h4>Verificamos emprendedores</h4>
+                        <p>Confirmamos que sean vecinos del condominio</p>
+                    </div>
+
+                    <div class="funciona-paso">
+                        <div class="paso-numero">2</div>
+                        <h4>Moderamos contenido</h4>
+                        <p>Garantizamos un espacio seguro y ordenado</p>
+                    </div>
+
+                    <div class="funciona-paso">
+                        <div class="paso-numero">3</div>
+                        <h4>Mejoramos constantemente</h4>
+                        <p>Escuchamos sugerencias y evolucionamos</p>
+                    </div>
+
+                    <div class="funciona-paso">
+                        <div class="paso-numero">4</div>
+                        <h4>Apoyamos el crecimiento</h4>
+                        <p>Herramientas para que tu negocio prospere</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== POR QUÉ AHORA ==================== -->
+    <section class="por-que-ahora">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por Qué Ahora?</h2>
+            </div>
+
+            <div class="razon-grid">
+                <div class="razon-card">
+                    <div class="razon-number">📊</div>
+                    <p>Ya hay iniciativa. El grupo de WhatsApp funciona... pero de manera caótica. Es hora de ordenar.</p>
+                </div>
+
+                <div class="razon-card">
+                    <div class="razon-number">🤝</div>
+                    <p>Hay potencial. Más de 300 departamentos con gente con ideas. ImpulsaWeb es la plataforma que faltaba.</p>
+                </div>
+
+                <div class="razon-card">
+                    <div class="razon-number">⏰</div>
+                    <p>Es el momento. Pequeños emprendimientos buscan alternativas. Nosotros tenemos la solución vecinal.</p>
+                </div>
+
+                <div class="razon-card">
+                    <div class="razon-number">🎯</div>
+                    <p>Es realista. No es complejo. Es un catálogo simple que resuelve un problema real.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ==================== TESTIMONIOS ==================== -->
-    <section id="testimonios" class="testimonios">
+    <section class="testimonios">
         <div class="container">
             <div class="section-header">
-                <h2>Lo que dicen nuestros clientes</h2>
-                <p>Casos reales de pequeños negocios que crecieron con ImpulsaWeb</p>
+                <h2>Lo que piensan los primeros en probar ImpulsaWeb</h2>
+                <p>Historias reales de nuestro grupo piloto</p>
             </div>
 
             <div class="testimonios-grid">
                 <!-- Testimonio 1 -->
                 <div class="testimonio-card">
                     <div class="testimonios-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonio-texto">"ImpulsaWeb nos ayudó a crear una página web profesional para nuestro restaurante. Aumentamos nuestros pedidos online un 60% en los primeros 3 meses. ¡Recomendados!"</p>
+                    <p class="testimonio-texto">"Al fin encontré un lugar donde ver todos los menús del condominio sin morir en el scroll. Ahorro tiempo y dinero. Los vendedores están claritos."</p>
                     <div class="testimonio-autor">
-                        <div class="autor-avatar">MA</div>
+                        <div class="autor-avatar">CR</div>
                         <div>
-                            <p class="autor-nombre">María Andrés</p>
-                            <p class="autor-negocio">Restaurante "La Mesa"</p>
+                            <p class="autor-nombre">Carolina R.</p>
+                            <p class="autor-rol">Cliente frecuente</p>
                         </div>
                     </div>
                 </div>
@@ -337,12 +467,12 @@
                 <!-- Testimonio 2 -->
                 <div class="testimonio-card">
                     <div class="testimonios-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonio-texto">"El sistema de gestión nos cambió la vida. Ahora organizamos pedidos, productos y clientes sin caos. Y el equipo de ImpulsaWeb es muy responsive."</p>
+                    <p class="testimonio-texto">"Soy emprendedora de postres. ImpulsaWeb me dio visibilidad que no tenía en WhatsApp. Mis clientes me encuentran fácil. Mis ventas subieron."</p>
                     <div class="testimonio-autor">
-                        <div class="autor-avatar">JG</div>
+                        <div class="autor-avatar">MG</div>
                         <div>
-                            <p class="autor-nombre">Jorge García</p>
-                            <p class="autor-negocio">Tienda "Tech Local"</p>
+                            <p class="autor-nombre">Martina G.</p>
+                            <p class="autor-rol">Emprendedora de repostería</p>
                         </div>
                     </div>
                 </div>
@@ -350,12 +480,12 @@
                 <!-- Testimonio 3 -->
                 <div class="testimonio-card">
                     <div class="testimonios-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonio-texto">"Con el contenido digital que crearon para nosotros, triplicamos nuestra presencia online. El diseño es moderno y el copywriting es persuasivo. 10/10."</p>
+                    <p class="testimonio-texto">"Como administrador del condominio, esto es lo que necesitábamos. Orden, profesionalismo y comunidad más unida. Excelente iniciativa."</p>
                     <div class="testimonio-autor">
-                        <div class="autor-avatar">SC</div>
+                        <div class="autor-avatar">PC</div>
                         <div>
-                            <p class="autor-nombre">Sofía Chen</p>
-                            <p class="autor-negocio">Servicio "Limpieza Pro"</p>
+                            <p class="autor-nombre">Pablo C.</p>
+                            <p class="autor-rol">Administrador del condominio</p>
                         </div>
                     </div>
                 </div>
@@ -363,12 +493,12 @@
                 <!-- Testimonio 4 -->
                 <div class="testimonio-card">
                     <div class="testimonios-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonio-texto">"Creía que no podía pagar una página web profesional. Con ImpulsaWeb encontré planes accesibles sin sacrificar calidad. Excelente atención y soporte."</p>
+                    <p class="testimonio-texto">"Está re bien. Simple, fácil, sin complicaciones. Así es como debería ser. ¡Todos en el condominio deberíamos tener esto!"</p>
                     <div class="testimonio-autor">
-                        <div class="autor-avatar">RM</div>
+                        <div class="autor-avatar">DJ</div>
                         <div>
-                            <p class="autor-nombre">Roberto Martínez</p>
-                            <p class="autor-negocio">Salón "Estilos"</p>
+                            <p class="autor-nombre">Daniel J.</p>
+                            <p class="autor-rol">Vecino del edificio</p>
                         </div>
                     </div>
                 </div>
@@ -376,17 +506,17 @@
         </div>
     </section>
 
-    <!-- ==================== CTA SECTION ==================== -->
+    <!-- ==================== CTA FINAL ==================== -->
     <section class="cta-final">
         <div class="container">
             <div class="cta-content">
-                <h2>¿Listo para impulsar tu negocio?</h2>
-                <p>No esperes más. Transforma tu negocio con tecnología simple y efectiva. La primera asesoría es gratis.</p>
+                <h2>¿Listo para ser parte de la revolución del condominio?</h2>
+                <p>Te invitamos a ser parte de nuestro grupo piloto. Sé de los primeros en probar ImpulsaWeb.</p>
                 
                 <div class="cta-buttons">
-                    <button class="btn btn-primary-large" onclick="scrollToContacto()">Solicita tu asesoría gratuita</button>
-                    <a href="https://wa.me/+519468857900?text=Hola%20ImpulsaWeb%21%20Me%20gustaría%20agendar%20una%20asesoría%20gratuita" target="_blank" class="btn btn-secondary-large">
-                        💬 WhatsApp
+                    <button class="btn btn-primary-large" onclick="scrollToContacto()">Sí, quiero probar</button>
+                    <a href="https://wa.me/+51946885790?text=Hola%20ImpulsaWeb%21%20Me%20interesa%20saber%20más%20sobre%20el%20grupo%20piloto" target="_blank" class="btn btn-secondary-large">
+                        💬 Cuéntame más
                     </a>
                 </div>
             </div>
@@ -397,15 +527,15 @@
     <section id="contacto" class="contacto">
         <div class="container">
             <div class="section-header">
-                <h2>Ponte en contacto</h2>
-                <p>Completa el formulario y nos comunicaremos contigo dentro de 24 horas</p>
+                <h2>Únete al Grupo Piloto</h2>
+                <p>Cuéntanos sobre ti y tu emprendimiento (o si eres cliente interesado)</p>
             </div>
 
             <div class="contacto-wrapper">
                 <form id="contactoForm" class="contacto-form">
                     <div class="form-group">
-                        <label for="nombre">Nombre completo *</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        <label for="nombre">Tu nombre *</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?" required>
                         <span class="error-message" id="errorNombre"></span>
                     </div>
 
@@ -416,53 +546,65 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="telefono">Teléfono *</label>
+                        <label for="telefono">Teléfono / WhatsApp *</label>
                         <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11 2345-6789" required>
                         <span class="error-message" id="errorTelefono"></span>
                     </div>
 
                     <div class="form-group">
-                        <label for="negocio">¿Cuál es tu negocio? *</label>
-                        <input type="text" id="negocio" name="negocio" placeholder="Ej: Restaurante, Tienda, Salón de belleza..." required>
+                        <label for="departamento">Número de departamento (opcional)</label>
+                        <input type="text" id="departamento" name="departamento" placeholder="Ej: 5B, 12A, etc">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo">¿Eres emprendedor o cliente? *</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="emprendedor">Soy emprendedor / tengo negocio</option>
+                            <option value="cliente">Soy cliente interesado</option>
+                            <option value="ambos">Soy ambos</option>
+                        </select>
+                        <span class="error-message" id="errorTipo"></span>
+                    </div>
+
+                    <div class="form-group" id="grupoNegocio" style="display: none;">
+                        <label for="negocio">¿Qué tipo de negocio tienes? *</label>
+                        <select id="negocio" name="negocio">
+                            <option value="">Selecciona una opción</option>
+                            <option value="menu">Menús diarios</option>
+                            <option value="postres">Postres y repostería</option>
+                            <option value="tienda">Tienda de productos</option>
+                            <option value="alquiler">Alquileres</option>
+                            <option value="servicios">Servicios varios</option>
+                            <option value="otro">Otro</option>
+                        </select>
                         <span class="error-message" id="errorNegocio"></span>
                     </div>
 
                     <div class="form-group">
-                        <label for="intereses">¿Qué te interesa? *</label>
-                        <select id="intereses" name="intereses" required>
-                            <option value="">Selecciona una opción</option>
-                            <option value="pagina-web">Página web profesional</option>
-                            <option value="sistema-gestion">Sistema de gestión</option>
-                            <option value="contenido-digital">Contenido digital</option>
-                            <option value="todo">Todo lo anterior</option>
-                            <option value="consulta-general">Consulta general</option>
-                        </select>
-                        <span class="error-message" id="errorIntereses"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje (opcional)</label>
-                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos un poco sobre tu negocio..." rows="5"></textarea>
+                        <label for="mensaje">¿Por qué te interesa? (opcional)</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente..." rows="4"></textarea>
                     </div>
 
                     <div class="form-group checkbox">
                         <input type="checkbox" id="terminos" name="terminos" required>
-                        <label for="terminos">Acepto recibir información sobre servicios y promociones</label>
+                        <label for="terminos">Quiero recibir novedades sobre ImpulsaWeb</label>
                         <span class="error-message" id="errorTerminos"></span>
                     </div>
 
-                    <button type="submit" class="btn btn-primary-large">Enviar solicitud</button>
-                    <p class="form-note">🔒 Tus datos están seguros y no serán compartidos</p>
+                    <button type="submit" class="btn btn-primary-large">Enviar mi solicitud</button>
+                    <p class="form-note">✓ Nos comunicaremos por WhatsApp o email dentro de 24 horas</p>
                 </form>
 
                 <div class="contacto-info">
-                    <h3>También puedes contactarnos directamente</h3>
+                    <h3>O habla directo con nosotros</h3>
                     
                     <div class="info-item">
                         <div class="info-icon">📱</div>
                         <div>
                             <p class="info-label">WhatsApp</p>
-                            <p><a href="https://wa.me/+51946885790" target="_blank">+51 946 885 790</a></p>
+                            <p><a href="https://wa.me/+51946885790?text=Hola%20ImpulsaWeb%21%20Me%20interesa%20participar" target="_blank">+51 9 4688-5790</a></p>
+                            <p class="info-small">Respuesta rápida garantizada</p>
                         </div>
                     </div>
 
@@ -470,26 +612,19 @@
                         <div class="info-icon">📧</div>
                         <div>
                             <p class="info-label">Email</p>
-                            <p><a href="mailto:impulsawebempresamype@gmail.com">impulsawebempresamype@gmail.com</a></p>
+                            <p><a href="mailto:hola@impulsaweb.com">hola@impulsaweb.com</a></p>
+                            <p class="info-small">Respuesta en menos de 24 horas</p>
                         </div>
                     </div>
 
-                    <div class="info-item">
-                        <div class="info-icon">🕐</div>
-                        <div>
-                            <p class="info-label">Horario de atención</p>
-                            <p>Lunes a viernes: 9:00 AM - 18:00 PM<br>Sábado: 10:00 AM - 14:00 PM</p>
-                        </div>
-                    </div>
-
-                    <div class="redes-sociales">
-                        <p>Síguenos en redes:</p>
-                        <div class="social-links">
-                            <a href="https://facebook.com/" target="_blank" title="Facebook">f</a>
-                            <a href="https://instagram.com/" target="_blank" title="Instagram">📷</a>
-                            <a href="https://linkedin.com/company/" target="_blank" title="LinkedIn">in</a>
-                            <a href="https://tiktok.com/" target="_blank" title="TikTok">♪</a>
-                        </div>
+                    <div class="info-box">
+                        <h4>¿Qué sigue después?</h4>
+                        <ol class="info-list">
+                            <li>Recibes nuestro mensaje</li>
+                            <li>Te explicamos el proyecto en detalle</li>
+                            <li>Si te late, ¡eres del grupo piloto!</li>
+                            <li>Comienzas a usar ImpulsaWeb</li>
+                        </ol>
                     </div>
                 </div>
             </div>
@@ -502,41 +637,39 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>ImpulsaWeb</h4>
-                    <p>Tecnología simple para hacer crecer tu negocio.</p>
+                    <p>Un catálogo para los emprendedores del condominio. Orden, visibilidad y comunidad.</p>
                 </div>
 
                 <div class="footer-section">
-                    <h4>Enlaces rápidos</h4>
+                    <h4>Enlaces</h4>
                     <ul>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#beneficios">Beneficios</a></li>
-                        <li><a href="#proceso">Cómo trabajamos</a></li>
-                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#problema">El Problema</a></li>
+                        <li><a href="#solucion">La Solución</a></li>
+                        <li><a href="#negocios">Tipos de Negocios</a></li>
+                        <li><a href="#como-funciona">Cómo Funciona</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
-                    <h4>Contacto</h4>
-                    <p>📱 +51 946 885 790</p>
-                    <p>📧 impulsawebempresamype@gmail.com</p>
+                    <h4>Contacto Rápido</h4>
+                    <p>📱 <a href="https://wa.me/+51946885790" target="_blank">WhatsApp</a></p>
+                    <p>📧 <a href="mailto:hola@impulsaweb.com">hola@impulsaweb.com</a></p>
                 </div>
 
                 <div class="footer-section">
                     <h4>Síguenos</h4>
                     <div class="social-links">
-                        <a href="https://facebook.com/" target="_blank">Facebook</a>
-                        <a href="https://instagram.com/" target="_blank">Instagram</a>
-                        <a href="https://linkedin.com/company/" target="_blank">LinkedIn</a>
-                        <a href="https://tiktok.com/" target="_blank">TikTok</a>
+                        <a href="#" target="_blank" title="Instagram">📷</a>
+                        <a href="#" target="_blank" title="Facebook">f</a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 ImpulsaWeb. Todos los derechos reservados.</p>
+                <p>&copy; 2024 ImpulsaWeb. Para los vecinos del condominio.</p>
                 <div class="footer-links">
                     <a href="#">Política de privacidad</a>
-                    <a href="#">Términos de servicio</a>
+                    <a href="#">Términos de uso</a>
                 </div>
             </div>
         </div>
@@ -546,14 +679,12 @@
     <div id="successModal" class="success-modal">
         <div class="success-content">
             <div class="success-icon">✅</div>
-            <h3>¡Mensaje enviado!</h3>
-            <p>Gracias por contactarnos. Nos comunicaremos contigo pronto por WhatsApp o email.</p>
-            <button onclick="closeSuccessModal()" class="btn btn-primary">Cerrar</button>
+            <h3>¡Solicitud enviada!</h3>
+            <p>Gracias por tu interés. Nos comunicaremos contigo pronto por WhatsApp o email. 🚀</p>
+            <button onclick="closeSuccessModal()" class="btn btn-primary">Entendido</button>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-

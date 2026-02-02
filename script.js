@@ -78,13 +78,9 @@ if (contactoForm) {
             },
             message: 'Por favor ingresa un teléfono válido'
         },
-        negocio: {
-            validate: (value) => value.trim().length >= 2,
-            message: 'Por favor ingresa el nombre de tu negocio'
-        },
-        intereses: {
+        tipo: {
             validate: (value) => value !== '',
-            message: 'Por favor selecciona una opción'
+            message: 'Por favor selecciona si eres emprendedor o cliente'
         },
         terminos: {
             validate: (value) => value === true,
@@ -211,6 +207,24 @@ function showSuccessModal() {
             modal.classList.remove('active');
         }, 5000);
     }
+}
+
+// ==================== MANEJO DEL TIPO DE EMPRENDEDOR ==================== 
+
+// Mostrar/ocultar campo de tipo de negocio según el tipo seleccionado
+const tipoSelect = document.getElementById('tipo');
+const grupoNegocio = document.getElementById('grupoNegocio');
+
+if (tipoSelect) {
+    tipoSelect.addEventListener('change', (e) => {
+        if (e.target.value === 'emprendedor' || e.target.value === 'ambos') {
+            grupoNegocio.style.display = 'block';
+            document.getElementById('negocio').required = true;
+        } else {
+            grupoNegocio.style.display = 'none';
+            document.getElementById('negocio').required = false;
+        }
+    });
 }
 
 // ==================== ANIMACIONES DE SCROLL ====================
