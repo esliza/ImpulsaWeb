@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImpulsaWeb - Tecnología simple para hacer crecer tu negocio</title>
+    <meta name="description" content="Crea tu presencia online con ImpulsaWeb. Páginas web modernas, sistemas de gestión y contenido digital para pequeños negocios.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Fondo circular -->
+                        <circle cx="25" cy="25" r="23" fill="url(#gradientLogo)" stroke="none"/>
+                        
+                        <!-- Definir gradiente -->
+                        <defs>
+                            <linearGradient id="gradientLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        
+                        <!-- Pantalla/Dispositivo -->
+                        <rect x="12" y="10" width="26" height="20" rx="2" fill="none" stroke="white" stroke-width="1.5"/>
+                        <line x1="14" y1="12" x2="36" y2="12" stroke="white" stroke-width="1"/>
+                        
+                        <!-- Líneas de contenido (como datos) -->
+                        <line x1="14" y1="15" x2="30" y2="15" stroke="white" stroke-width="0.8" opacity="0.8"/>
+                        <line x1="14" y1="18" x2="28" y2="18" stroke="white" stroke-width="0.8" opacity="0.8"/>
+                        <line x1="14" y1="21" x2="32" y2="21" stroke="white" stroke-width="0.8" opacity="0.8"/>
+                        <line x1="14" y1="24" x2="26" y2="24" stroke="white" stroke-width="0.8" opacity="0.8"/>
+                        
+                        <!-- Flecha hacia arriba (crecimiento) -->
+                        <g transform="translate(33, 15)">
+                            <line x1="0" y1="8" x2="0" y2="0" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="0" y1="0" x2="-2" y2="3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="0" y1="0" x2="2" y2="3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        
+                        <!-- Base/Tienda (parte inferior) -->
+                        <path d="M 16 32 L 34 32 L 33 27 L 17 27 Z" fill="white" opacity="0.9"/>
+                        <circle cx="20" cy="35" r="1" fill="white"/>
+                        <circle cx="30" cy="35" r="1" fill="white"/>
+                    </svg>
+                    <span class="logo-text">ImpulsaWeb</span>
+                </div>
+
+                <!-- Menú -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                        <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+                        <li><a href="#proceso" class="nav-link">Cómo trabajamos</a></li>
+                        <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                        <li><a href="#contacto" class="nav-link cta-btn">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Botón menú móvil -->
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="blob"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Impulsamos tu negocio<br>con <span class="highlight">tecnología simple</span> y efectiva</h1>
+                <p class="hero-subtitle">Pequeños negocios, grandes resultados. Diseñamos soluciones web que convierten visitas en clientes.</p>
+                
+                <div class="hero-cta">
+                    <button class="btn btn-primary" onclick="scrollToContacto()">Solicita una asesoría gratuita</button>
+                    <a href="https://wa.me/+51946885790?text=Hola%20ImpulsaWeb%21%20Me%20gustaría%20conocer%20más%20sobre%20vuestros%20servicios" target="_blank" class="btn btn-secondary">
+                        💬 Hablemos por WhatsApp
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Negocios transformados</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfacción de clientes</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2 años</span>
+                        <span class="stat-label">De experiencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICIOS ==================== -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>Soluciones web completas para el crecimiento de tu negocio</p>
+            </div>
+
+            <div class="servicios-grid">
+                <!-- Servicio 1 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="28" fill="#EEF2FF" stroke="#6366F1" stroke-width="2"/>
+                            <path d="M20 15H40C41.1046 15 42 15.8954 42 17V43C42 44.1046 41.1046 45 40 45H20C18.8954 45 18 44.1046 18 43V17C18 15.8954 18.8954 15 20 15Z" fill="none" stroke="#6366F1" stroke-width="2"/>
+                            <line x1="18" y1="22" x2="42" y2="22" stroke="#6366F1" stroke-width="1.5"/>
+                            <circle cx="30" cy="35" r="5" fill="none" stroke="#6366F1" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3>Páginas Web Modernas</h3>
+                    <p>Diseños responsivos, rápidos y optimizados para SEO que te posiciona en Google y atrae clientes reales.</p>
+                    <ul class="servicio-features">
+                        <li>✓ Diseño personalizado</li>
+                        <li>✓ Optimización SEO</li>
+                        <li>✓ Móvil-responsive</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="28" fill="#F0FDF4" stroke="#10B981" stroke-width="2"/>
+                            <rect x="18" y="18" width="24" height="24" rx="2" fill="none" stroke="#10B981" stroke-width="2"/>
+                            <path d="M18 30H42" stroke="#10B981" stroke-width="1.5"/>
+                            <path d="M30 18V42" stroke="#10B981" stroke-width="1.5"/>
+                            <circle cx="24" cy="24" r="1.5" fill="#10B981"/>
+                            <circle cx="36" cy="24" r="1.5" fill="#10B981"/>
+                            <circle cx="24" cy="36" r="1.5" fill="#10B981"/>
+                            <circle cx="36" cy="36" r="1.5" fill="#10B981"/>
+                        </svg>
+                    </div>
+                    <h3>Sistemas de Gestión</h3>
+                    <p>Administra pedidos, controla inventario y organiza clientes desde una plataforma intuitiva y eficiente.</p>
+                    <ul class="servicio-features">
+                        <li>✓ Gestión de pedidos</li>
+                        <li>✓ Control de stock</li>
+                        <li>✓ Base de datos de clientes</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="28" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+                            <path d="M25 22L30 28L35 22" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 30H38M22 38H38" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="30" cy="34" r="8" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3>Contenido Digital</h3>
+                    <p>Textos persuasivos, diseño visual atractivo y estrategias para potenciar tu presencia online y vender más.</p>
+                    <ul class="servicio-features">
+                        <li>✓ Copywriting comercial</li>
+                        <li>✓ Diseño visual profesional</li>
+                        <li>✓ Estrategia de marketing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BENEFICIOS ==================== -->
+    <section id="beneficios" class="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por qué elegirnos?</h2>
+                <p>Beneficios reales que transforman tu negocio</p>
+            </div>
+
+            <div class="beneficios-grid">
+                <!-- Beneficio 1 -->
+                <div class="beneficio-item">
+                    <div class="beneficio-number">01</div>
+                    <h3>Más Ventas</h3>
+                    <p>Una página web profesional y atractiva convierte visitantes en clientes. Nuestros diseños están optimizados para convertir.</p>
+                    <div class="beneficio-metrics">
+                        <span>+45%</span> conversión promedio
+                    </div>
+                </div>
+
+                <!-- Beneficio 2 -->
+                <div class="beneficio-item">
+                    <div class="beneficio-number">02</div>
+                    <h3>Mejor Organización</h3>
+                    <p>Automatiza procesos, gestiona pedidos y controla tu inventario en un solo lugar. Todo bajo control.</p>
+                    <div class="beneficio-metrics">
+                        <span>80%</span> menos tiempo en trámites
+                    </div>
+                </div>
+
+                <!-- Beneficio 3 -->
+                <div class="beneficio-item">
+                    <div class="beneficio-number">03</div>
+                    <h3>Ahorro de Tiempo</h3>
+                    <p>Dedica tu tiempo a lo que realmente importa: crecer tu negocio. Nosotros manejamos la tecnología.</p>
+                    <div class="beneficio-metrics">
+                        <span>5+ horas</span> ahorradas por semana
+                    </div>
+                </div>
+
+                <!-- Beneficio 4 -->
+                <div class="beneficio-item">
+                    <div class="beneficio-number">04</div>
+                    <h3>Presencia Online 24/7</h3>
+                    <p>Tu negocio trabaja incluso mientras duermes. Atrae clientes de forma automática a cualquier hora.</p>
+                    <div class="beneficio-metrics">
+                        <span>24/7</span> disponible para clientes
+                    </div>
+                </div>
+
+                <!-- Beneficio 5 -->
+                <div class="beneficio-item">
+                    <div class="beneficio-number">05</div>
+                    <h3>Soporte Dedicado</h3>
+                    <p>No estás solo. Nuestro equipo te acompaña en cada paso, resolviendo dudas y optimizando resultados.</p>
+                    <div class="beneficio-metrics">
+                        <span>Respuesta en</span> menos de 2 horas
+                    </div>
+                </div>
+
+                <!-- Beneficio 6 -->
+                <div class="beneficio-item">
+                    <div class="beneficio-number">06</div>
+                    <h3>Inversión Inteligente</h3>
+                    <p>Planes accesibles para pequeños negocios. Paga solo por lo que necesitas, sin sorpresas.</p>
+                    <div class="beneficio-metrics">
+                        <span>Desde</span> planes flexibles
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROCESO ==================== -->
+    <section id="proceso" class="proceso">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestro Proceso</h2>
+                <p>De la idea al negocio digital en 4 pasos</p>
+            </div>
+
+            <div class="proceso-timeline">
+                <!-- Paso 1 -->
+                <div class="paso">
+                    <div class="paso-header">
+                        <div class="paso-numero">1</div>
+                        <h3>Consultoría Gratuita</h3>
+                    </div>
+                    <p>Nos reunimos para entender tu negocio, objetivos y necesidades. Escuchamos más de lo que hablamos.</p>
+                    <div class="paso-icon">📞</div>
+                </div>
+
+                <div class="paso-conector"></div>
+
+                <!-- Paso 2 -->
+                <div class="paso">
+                    <div class="paso-header">
+                        <div class="paso-numero">2</div>
+                        <h3>Propuesta Personalizada</h3>
+                    </div>
+                    <p>Diseñamos una estrategia digital específica para tu negocio, con opciones y presupuesto claro.</p>
+                    <div class="paso-icon">📋</div>
+                </div>
+
+                <div class="paso-conector"></div>
+
+                <!-- Paso 3 -->
+                <div class="paso">
+                    <div class="paso-header">
+                        <div class="paso-numero">3</div>
+                        <h3>Desarrollo e Implementación</h3>
+                    </div>
+                    <p>Creamos tu solución web con diseño moderno, rápido y optimizado. Te informamos en cada etapa.</p>
+                    <div class="paso-icon">⚙️</div>
+                </div>
+
+                <div class="paso-conector"></div>
+
+                <!-- Paso 4 -->
+                <div class="paso">
+                    <div class="paso-header">
+                        <div class="paso-numero">4</div>
+                        <h3>Lanzamiento y Soporte</h3>
+                    </div>
+                    <p>Publicamos tu sitio y ofrecemos capacitación y soporte continuo para el éxito de tu negocio.</p>
+                    <div class="paso-icon">🚀</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIOS ==================== -->
+    <section id="testimonios" class="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p>Casos reales de pequeños negocios que crecieron con ImpulsaWeb</p>
+            </div>
+
+            <div class="testimonios-grid">
+                <!-- Testimonio 1 -->
+                <div class="testimonio-card">
+                    <div class="testimonios-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"ImpulsaWeb nos ayudó a crear una página web profesional para nuestro restaurante. Aumentamos nuestros pedidos online un 60% en los primeros 3 meses. ¡Recomendados!"</p>
+                    <div class="testimonio-autor">
+                        <div class="autor-avatar">MA</div>
+                        <div>
+                            <p class="autor-nombre">María Andrés</p>
+                            <p class="autor-negocio">Restaurante "La Mesa"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="testimonio-card">
+                    <div class="testimonios-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"El sistema de gestión nos cambió la vida. Ahora organizamos pedidos, productos y clientes sin caos. Y el equipo de ImpulsaWeb es muy responsive."</p>
+                    <div class="testimonio-autor">
+                        <div class="autor-avatar">JG</div>
+                        <div>
+                            <p class="autor-nombre">Jorge García</p>
+                            <p class="autor-negocio">Tienda "Tech Local"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="testimonio-card">
+                    <div class="testimonios-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"Con el contenido digital que crearon para nosotros, triplicamos nuestra presencia online. El diseño es moderno y el copywriting es persuasivo. 10/10."</p>
+                    <div class="testimonio-autor">
+                        <div class="autor-avatar">SC</div>
+                        <div>
+                            <p class="autor-nombre">Sofía Chen</p>
+                            <p class="autor-negocio">Servicio "Limpieza Pro"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 4 -->
+                <div class="testimonio-card">
+                    <div class="testimonios-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"Creía que no podía pagar una página web profesional. Con ImpulsaWeb encontré planes accesibles sin sacrificar calidad. Excelente atención y soporte."</p>
+                    <div class="testimonio-autor">
+                        <div class="autor-avatar">RM</div>
+                        <div>
+                            <p class="autor-nombre">Roberto Martínez</p>
+                            <p class="autor-negocio">Salón "Estilos"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para impulsar tu negocio?</h2>
+                <p>No esperes más. Transforma tu negocio con tecnología simple y efectiva. La primera asesoría es gratis.</p>
+                
+                <div class="cta-buttons">
+                    <button class="btn btn-primary-large" onclick="scrollToContacto()">Solicita tu asesoría gratuita</button>
+                    <a href="https://wa.me/+519468857900?text=Hola%20ImpulsaWeb%21%20Me%20gustaría%20agendar%20una%20asesoría%20gratuita" target="_blank" class="btn btn-secondary-large">
+                        💬 WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FORMULARIO DE CONTACTO ==================== -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ponte en contacto</h2>
+                <p>Completa el formulario y nos comunicaremos contigo dentro de 24 horas</p>
+            </div>
+
+            <div class="contacto-wrapper">
+                <form id="contactoForm" class="contacto-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        <span class="error-message" id="errorNombre"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        <span class="error-message" id="errorEmail"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11 2345-6789" required>
+                        <span class="error-message" id="errorTelefono"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="negocio">¿Cuál es tu negocio? *</label>
+                        <input type="text" id="negocio" name="negocio" placeholder="Ej: Restaurante, Tienda, Salón de belleza..." required>
+                        <span class="error-message" id="errorNegocio"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="intereses">¿Qué te interesa? *</label>
+                        <select id="intereses" name="intereses" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="pagina-web">Página web profesional</option>
+                            <option value="sistema-gestion">Sistema de gestión</option>
+                            <option value="contenido-digital">Contenido digital</option>
+                            <option value="todo">Todo lo anterior</option>
+                            <option value="consulta-general">Consulta general</option>
+                        </select>
+                        <span class="error-message" id="errorIntereses"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje (opcional)</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos un poco sobre tu negocio..." rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto recibir información sobre servicios y promociones</label>
+                        <span class="error-message" id="errorTerminos"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary-large">Enviar solicitud</button>
+                    <p class="form-note">🔒 Tus datos están seguros y no serán compartidos</p>
+                </form>
+
+                <div class="contacto-info">
+                    <h3>También puedes contactarnos directamente</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div>
+                            <p class="info-label">WhatsApp</p>
+                            <p><a href="https://wa.me/+51946885790" target="_blank">+51 946 885 790</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div>
+                            <p class="info-label">Email</p>
+                            <p><a href="mailto:impulsawebempresamype@gmail.com">impulsawebempresamype@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div>
+                            <p class="info-label">Horario de atención</p>
+                            <p>Lunes a viernes: 9:00 AM - 18:00 PM<br>Sábado: 10:00 AM - 14:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="redes-sociales">
+                        <p>Síguenos en redes:</p>
+                        <div class="social-links">
+                            <a href="https://facebook.com/" target="_blank" title="Facebook">f</a>
+                            <a href="https://instagram.com/" target="_blank" title="Instagram">📷</a>
+                            <a href="https://linkedin.com/company/" target="_blank" title="LinkedIn">in</a>
+                            <a href="https://tiktok.com/" target="_blank" title="TikTok">♪</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ImpulsaWeb</h4>
+                    <p>Tecnología simple para hacer crecer tu negocio.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#proceso">Cómo trabajamos</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📱 +51 946 885 790</p>
+                    <p>📧 impulsawebempresamype@gmail.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com/" target="_blank">Facebook</a>
+                        <a href="https://instagram.com/" target="_blank">Instagram</a>
+                        <a href="https://linkedin.com/company/" target="_blank">LinkedIn</a>
+                        <a href="https://tiktok.com/" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 ImpulsaWeb. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos de servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mensaje de éxito (oculto) -->
+    <div id="successModal" class="success-modal">
+        <div class="success-content">
+            <div class="success-icon">✅</div>
+            <h3>¡Mensaje enviado!</h3>
+            <p>Gracias por contactarnos. Nos comunicaremos contigo pronto por WhatsApp o email.</p>
+            <button onclick="closeSuccessModal()" class="btn btn-primary">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
